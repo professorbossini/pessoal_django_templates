@@ -1,12 +1,18 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
   <title>Primeira aplicação</title>
 </head>
 <body>
   <h1>Estamos no arquivo index.html!</h1>
+  <button onclick="hey()">Hey</button>
   <p>{{minha_primeira_variavel}}</p>
+  <p>Veja uma imagem:</p>
+  <img src="{% static 'images/foto.jpg' %}" alt="Uma foto">
+  <script src="{% static 'js/script.js' %}"></script>
 </body>
 </html>
